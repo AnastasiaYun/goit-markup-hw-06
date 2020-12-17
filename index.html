@@ -365,14 +365,22 @@
                             </use>
                         </svg>
                     </a>
-                    <form action="">Подпишитесь на рассылку
-                        <label for="mail">
-                            <input type="email">
-                        </label>
-                        <button type="submit">Подписаться</button>
-                    </form>
                 </li>
             </ul>
+            <form action="" class="footer-form">
+                <div class="form-field"> Подпишитесь на рассылку
+                    <div class="form-field-imput">
+                        <label for="mail">
+                            <input type="email" placeholder="E-mail" id="email" class="footer-form-email">
+                        </label>
+                        <button class="button btn btn-center" type="submit">Подписаться
+                            <svg class="telegramm-icon" width="24" height="24">
+                                <use href="./img/sprite.svg#telegram-icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
