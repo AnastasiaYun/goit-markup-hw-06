@@ -368,8 +368,8 @@
                 </li>
             </ul>
             <form action="" class="footer-form">
-                <div class="form-field"> Подпишитесь на рассылку
-                    <div class="form-field-imput">
+                <p class="form-field"> Подпишитесь на рассылку
+                    <span class="form-field-imput">
                         <label for="mail">
                             <input type="email" placeholder="E-mail" id="email" class="footer-form-email">
                         </label>
@@ -378,8 +378,8 @@
                                 <use href="./img/sprite.svg#telegram-icon"></use>
                             </svg>
                         </button>
-                    </div>
-                </div>
+                    </span>
+                </p>
             </form>
         </div>
     </footer>
@@ -388,10 +388,27 @@
             <button type="button" class="close-btn" data-modal-close>
                 <svg width="18" height="18">
                     <use href="./img/sprite.svg#icon-close-black-18dp">
-
                     </use>
                 </svg>
             </button>
+            <form action="" class="form-modal">
+                <p>Оставьте свои данные, мы вам перезвоним</p>
+                <label for="">Имя
+                    <input type="name">
+                    <svg width="18" height="18" class="form-modal-icons">
+                        <use href="./img/sprite.svg#icon-person-black">
+                        </use>
+                    </svg>
+                </label>
+                <label for="">Телефон
+                    <input type=" tel">
+                </label>
+                <label for="">Почта
+                    <input type="email">
+                </label>
+                <span>Комментарий</span>
+                <textarea name="coments" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
