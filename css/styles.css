@@ -28,6 +28,16 @@ h4,
 p {
   margin: 0;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .logo,
 .logo-footer {
   color: var(--primary-text-color);
@@ -755,23 +765,25 @@ section {
   color: #212121;
 }
 .form-modal span label {
-  display: block;
+  display: contents;
   margin-left: 8px;
   font-weight: normal;
   font-size: 14px;
   line-height: 0.583;
   letter-spacing: 0.03em;
 }
-.form-modal span input:checked + .form-modal span label {
-  color: yellow;
-  border: yellow;
+.modal-check:checked + .modal-check-text::before {
+  background-image: url(../img/iconcheck.svg);
+  border: none;
 }
-.form-modal span label::before {
+.modal-check-text::before {
   content: "";
   display: inline-flex;
   width: 16px;
   height: 15px;
-  outline: 1px #212121;
+  border: 1.5px solid black;
+  border-radius: 2px;
+  margin-right: 10px;
 }
 .link-modal-form-checkbox {
   color: var(--accent-color);
