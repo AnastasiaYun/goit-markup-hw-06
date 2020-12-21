@@ -696,6 +696,7 @@ section {
   position: relative;
 }
 .form-modal input {
+  padding-left: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -714,6 +715,7 @@ section {
   fill: var(--accent-color);
 }
 .form-modal textarea {
+  height: 140px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -759,6 +761,17 @@ section {
   font-size: 14px;
   line-height: 0.583;
   letter-spacing: 0.03em;
+}
+.form-modal span input:checked + .form-modal span label {
+  color: yellow;
+  border: yellow;
+}
+.form-modal span label::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  outline: 1px #212121;
 }
 .link-modal-form-checkbox {
   color: var(--accent-color);
